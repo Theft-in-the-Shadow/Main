@@ -1,0 +1,11 @@
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\obj\Debug\Assembly-CSharp-firstpass.pdb
