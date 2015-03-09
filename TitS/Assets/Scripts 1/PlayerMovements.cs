@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovements : MonoBehaviour
 {
 	public float turnSmoothing = 200f;   // A smoothing value for turning the player.
 	public float speedDampTime = 0.1f;  // The damping for the speed parameter
@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 	float rot = 0f;
 	private Animator anim;              // Reference to the animator component.
 	private HashIDs hash;  
+	public float vitesse;
 //	private Vector3 izi = new Vector3();// Reference to the HashIDs.
 	
 	
@@ -29,6 +30,14 @@ public class PlayerMovement : MonoBehaviour
 		float h = Input.GetAxis("Horizontal");
 		float v = Input.GetAxis("Vertical");
 		bool sneak = Input.GetButton("Sneak");
+		if (Input.GetAxis ("courir") != 0) 
+		{
+			vitesse = 5.5f;
+		} 
+		else 
+		{
+			vitesse = 1f;
+		}
 		
 		MovementManagement(h, v, sneak);
 	}
@@ -49,35 +58,35 @@ public class PlayerMovement : MonoBehaviour
 			//Rotating(horizontal, vertical);
 			if (vertical > 0f & horizontal ==0)
 			{
-				rot = rot + (5f*horizontal);
+				rot = rot + (3f*horizontal);
 				rigidbody.MoveRotation(Quaternion.Euler(0,rot,0));
-				anim.SetFloat(hash.speedFloat, 5.5f, speedDampTime, Time.deltaTime);
+				anim.SetFloat(hash.speedFloat, vitesse, speedDampTime, Time.deltaTime);
 			}
 			if (vertical > 0f & horizontal !=0)
 			{
-			rot = rot + (5f*horizontal);
+			rot = rot + (3f*horizontal);
 			rigidbody.MoveRotation(Quaternion.Euler(0,rot,0));
-			anim.SetFloat(hash.speedFloat, 5.5f, speedDampTime, Time.deltaTime);
+				anim.SetFloat(hash.speedFloat, vitesse, speedDampTime, Time.deltaTime);
 			}
 			if (vertical == 0f)
 			{
-			rot = rot + (10f * horizontal);
+			rot = rot + (7f * horizontal);
 			rigidbody.MoveRotation(Quaternion.Euler(0,rot,0));
-			anim.SetFloat(hash.speedFloat, 5.5f, speedDampTime, Time.deltaTime);
+				anim.SetFloat(hash.speedFloat, vitesse, speedDampTime, Time.deltaTime);
 			}
 			if (vertical < 0f & horizontal ==0f)
 			{
 				Rotating(0,vertical);
 				//rot = rot + (5f*horizontal);
 				//rigidbody.MoveRotation(Quaternion.Euler(0,rot,0));
-				anim.SetFloat(hash.speedFloat, 5.5f, speedDampTime, Time.deltaTime);
+				anim.SetFloat(hash.speedFloat, vitesse, speedDampTime, Time.deltaTime);
 			}
 			if (vertical < 0f & horizontal !=0f)
 			{
 
-				rot =rot + (5f*horizontal);
+				rot =rot + (3f*horizontal);
 				rigidbody.MoveRotation(Quaternion.Euler(0,180+rot,0));
-				anim.SetFloat(hash.speedFloat, 5.5f, speedDampTime, Time.deltaTime);
+				anim.SetFloat(hash.speedFloat, vitesse, speedDampTime, Time.deltaTime);
 			}
 
 

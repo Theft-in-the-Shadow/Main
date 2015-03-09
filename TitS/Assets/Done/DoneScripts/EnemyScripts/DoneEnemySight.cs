@@ -91,10 +91,8 @@ public class DoneEnemySight : MonoBehaviour
 			
 			// Store the name hashes of the current states.
 			int playerLayerZeroStateHash = playerAnim.GetCurrentAnimatorStateInfo(0).nameHash;
-			int playerLayerOneStateHash = playerAnim.GetCurrentAnimatorStateInfo(1).nameHash;
-			
 			// If the player is running or is attracting attention...
-			if(playerLayerZeroStateHash == hash.locomotionState || playerLayerOneStateHash == hash.shoutState)
+			if(playerLayerZeroStateHash == hash.locomotionState)
 			{
 				// ... and if the player is within hearing range...
 				if(CalculatePathLength(player.transform.position) <= col.radius)

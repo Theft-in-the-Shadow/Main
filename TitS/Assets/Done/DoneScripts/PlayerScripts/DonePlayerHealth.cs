@@ -9,7 +9,7 @@ public class DonePlayerHealth : MonoBehaviour
 	
 	
 	private Animator anim;								// Reference to the animator component.
-	private DonePlayerMovement playerMovement;			// Reference to the player movement script.
+	private PlayerMovements playerMovement;			// Reference to the player movement script.
 	private DoneHashIDs hash;							// Reference to the HashIDs.
 	private DoneSceneFadeInOut sceneFadeInOut;			// Reference to the SceneFadeInOut script.
 	private DoneLastPlayerSighting lastPlayerSighting;	// Reference to the LastPlayerSighting script.
@@ -21,7 +21,7 @@ public class DonePlayerHealth : MonoBehaviour
 	{
 		// Setting up the references.
 		anim = GetComponent<Animator>();
-		playerMovement = GetComponent<DonePlayerMovement>();
+		playerMovement = GetComponent<PlayerMovements>();
 		hash = GameObject.FindGameObjectWithTag(DoneTags.gameController).GetComponent<DoneHashIDs>();
 		sceneFadeInOut = GameObject.FindGameObjectWithTag(DoneTags.fader).GetComponent<DoneSceneFadeInOut>();
 		lastPlayerSighting = GameObject.FindGameObjectWithTag(DoneTags.gameController).GetComponent<DoneLastPlayerSighting>();

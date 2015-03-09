@@ -1,14 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\TitS\Assets\Camera_mouv.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts 1\PlayerMovements.cs">
     <Files>
-      <File FileName="..\TitS\Assets\Camera_mouv.cs" Line="24" Column="2" />
-      <File FileName="..\TitS\Assets\Done\DoneScripts\PlayerScripts\DonePlayerHealth.cs" Line="1" Column="1" />
-      <File FileName="..\TitS\TitS.sln" Line="70" Column="1" />
-      <File FileName="..\TitS\Assets\Done\DoneScripts\EnemyScripts\DoneEnemySight.cs" Line="1" Column="1" />
-      <File FileName="..\TitS\Assets\Done\DoneScripts\EnemyScripts\DoneEnemyShooting.cs" Line="16" Column="14" />
-      <File FileName="Assets\Done\DoneScripts\PlayerScripts\DonePlayerHealth.cs" Line="26" Column="21" />
-      <File FileName="Assets\Done\DoneScripts\UnappliedScripts\DoneTags.cs" Line="1" Column="1" />
+      <File FileName="Assets\Done\DoneScripts\EnemyScripts\DoneEnemySight.cs" Line="94" Column="85" />
+      <File FileName="Assets\Scripts 1\PlayerMovements.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
