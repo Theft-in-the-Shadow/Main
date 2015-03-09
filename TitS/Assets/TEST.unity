@@ -8616,6 +8616,7 @@ GameObject:
   - 4: {fileID: 1409401999}
   - 95: {fileID: 1409402001}
   - 114: {fileID: 1409402000}
+  - 135: {fileID: 1409402002}
   m_Layer: 0
   m_Name: RemoteCamera
   m_TagString: Untagged
@@ -8629,7 +8630,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400108, guid: 841350109fa983342b05e20275f5ccd5, type: 3}
   m_PrefabInternal: {fileID: 1535134122}
   m_GameObject: {fileID: 1409401998}
-  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106829}
+  m_LocalRotation: {x: 0, y: -.678794682, z: 0, w: .73432821}
   m_LocalPosition: {x: 22.7482452, y: 3.01471758, z: 19.6876049}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
@@ -8655,8 +8656,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f59fd1900ac6d045ad146356519df73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 90
-  fieldOfViewAngle: 30
+  angle: 60
+  fieldOfViewAngle: 20
+  playerInSight: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!95 &1409402001
 Animator:
   serializedVersion: 3
@@ -8673,6 +8676,18 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!135 &1409402002
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409401998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .0599999987
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1413880370
 GameObject:
   m_ObjectHideFlags: 0
@@ -9558,7 +9573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 841350109fa983342b05e20275f5ccd5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -.707106829
+      value: -.678794682
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 841350109fa983342b05e20275f5ccd5, type: 3}
       propertyPath: m_LocalRotation.z
@@ -9566,7 +9581,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 841350109fa983342b05e20275f5ccd5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: .707106829
+      value: .73432821
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 841350109fa983342b05e20275f5ccd5, type: 3}
       propertyPath: m_RootOrder
@@ -11948,7 +11963,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1894845611}
   - 108: {fileID: 1894845612}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Directional light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11962,7 +11977,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1894845610}
   m_LocalRotation: {x: .405384719, y: .066960603, z: -.35734573, w: .838739276}
-  m_LocalPosition: {x: -.00018091168, y: .00180317869, z: .00296140695}
+  m_LocalPosition: {x: -.000394515868, y: .00273848535, z: .00131635682}
   m_LocalScale: {x: .00999999885, y: .00999999978, z: .0100000007}
   m_Children: []
   m_Father: {fileID: 1409401999}
