@@ -178,6 +178,8 @@ GameObject:
   - 124: {fileID: 29433871}
   - 81: {fileID: 29433870}
   - 114: {fileID: 29433869}
+  - 54: {fileID: 29433875}
+  - 135: {fileID: 29433874}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -266,6 +268,33 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+--- !u!135 &29433874
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29433867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &29433875
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29433867}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &57758300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,7 +1536,6 @@ GameObject:
   - 114: {fileID: 251026137}
   - 114: {fileID: 251026136}
   - 82: {fileID: 251026142}
-  - 81: {fileID: 251026141}
   m_Layer: 0
   m_Name: DefaultAvatar
   m_TagString: Player
@@ -1553,9 +1581,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 251026134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fce5c7c099b17de4aa1a129f74858ae9, type: 3}
+  m_Script: {fileID: 11500000, guid: a15f8fc0964ab2f4983393eaf885b051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shoutingClip: {fileID: 0}
   turnSmoothing: 200
   speedDampTime: .100000001
 --- !u!136 &251026138
@@ -1586,7 +1615,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!95 &251026140
 Animator:
@@ -1604,13 +1633,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!81 &251026141
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 251026134}
-  m_Enabled: 1
 --- !u!82 &251026142
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7659,7 +7681,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525590163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.05170584, y: 0, z: 0}
+  m_LocalPosition: {x: 7.8638835, y: 0, z: 1.52903819}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1299975513}
