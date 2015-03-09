@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 19400000, guid: b9e8d541a652947419dc9a80c64936f1, type: 2}
 --- !u!1001 &13898281
 Prefab:
@@ -180,6 +181,7 @@ GameObject:
   - 114: {fileID: 29433869}
   - 54: {fileID: 29433875}
   - 135: {fileID: 29433874}
+  - 114: {fileID: 29433876}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -295,6 +297,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &29433876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29433867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863b46d133f4e594d90ff432857e84fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &57758300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3682,6 +3695,10 @@ Prefab:
     - target: {fileID: 100002, guid: 2ab0893f5bba9b243b65e309e78089d0, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 2ab0893f5bba9b243b65e309e78089d0, type: 3}
+      propertyPath: m_Name
+      value: DefaultAvatar1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ab0893f5bba9b243b65e309e78089d0, type: 3}
@@ -10800,7 +10817,7 @@ GameObject:
   - 114: {fileID: 2102409363}
   - 114: {fileID: 2102409362}
   m_Layer: 0
-  m_Name: DefaultAvatar
+  m_Name: DefaultAvatar1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
