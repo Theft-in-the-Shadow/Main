@@ -89,6 +89,9 @@
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneAnimatorSetup.cs" />
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneTags.cs" />
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
+     <Compile Include="Assets\Laser\laserScript.cs" />
+     <Compile Include="Assets\Laser\laserScriptAlarm.cs" />
+     <Compile Include="Assets\Laser\laserScriptDesactivation.cs" />
      <Compile Include="Assets\Scripts 1\Bombe.cs" />
      <Compile Include="Assets\Scripts 1\HashIDs.cs" />
      <Compile Include="Assets\Scripts 1\PlayerHealth.cs" />
@@ -100,6 +103,7 @@
      <Compile Include="Assets\Scripts 1\rotate.cs" />
      <Compile Include="Assets\TEMPS.cs" />
      <Compile Include="Assets\camretour.cs" />
+     <Compile Include="Assets\mise en place\menupause.cs" />
      <Compile Include="Assets\ombre.cs" />
      <Compile Include="Assets\tableau.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
