@@ -96,7 +96,7 @@ public class DoneLastPlayerSighting : MonoBehaviour
 		else
 		{
 			// Otherwise fade in the normal music and fade out the panic music.
-			audio.volume = Mathf.Lerp(audio.volume, 0.8f, musicFadeSpeed * Time.deltaTime);
+			audio.volume = Mathf.Lerp(audio.volume, 1f, musicFadeSpeed * Time.deltaTime);
 			panicAudio.volume = Mathf.Lerp(panicAudio.volume, 0f, musicFadeSpeed * Time.deltaTime);
 		}
 	}

@@ -9,3 +9,4 @@ C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\ICSharpCode.NR
 C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
 C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\TitS\Temp\bin\Debug\UnityEngine.UI.dll

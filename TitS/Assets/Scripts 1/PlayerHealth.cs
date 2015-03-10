@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
 	//private LastPlayerSighting lastPlayerSighting;      // Reference to the LastPlayerSighting script.
 	private float timer;                                // A timer for counting to the reset of the level once the player is dead.
 	private bool playerDead;                            // A bool to show if the player is dead or not.
-	
+
 	
 	void Awake ()
 	{

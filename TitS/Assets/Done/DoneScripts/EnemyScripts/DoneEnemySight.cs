@@ -80,11 +80,15 @@ public class DoneEnemySight : MonoBehaviour
 					// ... and if the raycast hits the player...
 					if(hit.collider.gameObject == player)
 					{
-						// ... the player is in sight.
-						playerInSight = true;
+                        if(!playerHealth.ombre || lastPlayerSighting.position != lastPlayerSighting.resetPosition)
+                        {
+                            // ... the player is in sight.
+                            playerInSight = true;
+
+                            // Set the last global sighting is the players current position.
+                            lastPlayerSighting.position = player.transform.position;
+                        }
 						
-						// Set the last global sighting is the players current position.
-						lastPlayerSighting.position = player.transform.position;
 					}
 				}
 			}
