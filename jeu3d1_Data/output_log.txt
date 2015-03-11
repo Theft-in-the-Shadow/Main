@@ -18,21 +18,17 @@ Platform assembly: C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\jeu3d1_Data\Man
 Loading C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\jeu3d1_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\jeu3d1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\jeu3d1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.105 seconds
+- Completed reload, in  0.112 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\jeu3d1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Adrien\Desktop\Epita\Projet_Sup\Main\jeu3d1_Data\Managed\System.dll (this message is harmless)
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1771)
-
-UnloadTime: 7.166777 ms
+UnloadTime: 7.272978 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2587.
-Total: 1.629604 ms (FindLiveObjects: 0.148145 ms CreateObjectMapping: 0.032574 ms MarkObjects: 0.493968 ms  DeleteObjects: 0.056224 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2588.
+Total: 1.547499 ms (FindLiveObjects: 0.154392 ms CreateObjectMapping: 0.032574 ms MarkObjects: 0.443098 ms  DeleteObjects: 0.055777 ms)
 
 NullReferenceException: Object reference not set to an instance of an object
   at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
@@ -504,6 +500,60 @@ NullReferenceException: Object reference not set to an instance of an object
 
 NullReferenceException: Object reference not set to an instance of an object
   at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
+  at Trigger.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
+  at Trigger.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
+  at Trigger.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
+  at Trigger.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
+  at Trigger.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
+  at Trigger.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
+  at Trigger.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
+  at Trigger.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
+  at Trigger.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
   at Trigger.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
@@ -1184,534 +1234,4 @@ UnityEngine.GameObject:SetActive(Boolean)
 Bombe:Update()
  
 (Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UnityEngine.AudioSource.PlayClipAtPoint (UnityEngine.AudioClip clip, Vector3 position, Single volume) [0x00000] in <filename unknown>:0 
-  at UnityEngine.AudioSource.PlayClipAtPoint (UnityEngine.AudioClip clip, Vector3 position) [0x00000] in <filename unknown>:0 
-  at DonePlayerHealth.PlayerDying () [0x00000] in <filename unknown>:0 
-  at DonePlayerHealth.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnloadTime: 3.940143 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 146 unused Assets to reduce memory usage. Loaded Objects now: 521.
-Total: 3.538989 ms (FindLiveObjects: 0.030789 ms CreateObjectMapping: 0.017402 ms MarkObjects: 0.262378 ms  DeleteObjects: 2.572025 ms)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1771)
-
-UnloadTime: 0.896907 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2618.
-Total: 1.511355 ms (FindLiveObjects: 0.143683 ms CreateObjectMapping: 0.036144 ms MarkObjects: 0.491290 ms  DeleteObjects: 0.051761 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.OpenDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Trigger.CloseDoor () [0x00000] in <filename unknown>:0 
-  at Trigger.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UnityEngine.AudioSource.PlayClipAtPoint (UnityEngine.AudioClip clip, Vector3 position, Single volume) [0x00000] in <filename unknown>:0 
-  at UnityEngine.AudioSource.PlayClipAtPoint (UnityEngine.AudioClip clip, Vector3 position) [0x00000] in <filename unknown>:0 
-  at DonePlayerHealth.PlayerDying () [0x00000] in <filename unknown>:0 
-  at DonePlayerHealth.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnloadTime: 3.659469 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 146 unused Assets to reduce memory usage. Loaded Objects now: 521.
-Total: 3.441267 ms (FindLiveObjects: 0.030343 ms CreateObjectMapping: 0.024542 ms MarkObjects: 0.268179 ms  DeleteObjects: 2.499291 ms)
 
