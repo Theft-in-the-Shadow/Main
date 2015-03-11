@@ -5,10 +5,11 @@ public class menupause : MonoBehaviour {
 
 
 
-	public AudioSource audios;
-	
+    public AudioSource audios;
+
 	private Rect windowRect;
 	private bool paused = false , waited = true,option=false;
+    float izi;
 	
 	private void Start()
 	{

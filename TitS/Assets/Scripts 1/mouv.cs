@@ -17,6 +17,7 @@ public class mouv : MonoBehaviour {
     public GameObject roue4;
     private int play = 0;
     public bool tableau = false;
+    public GameObject fin;
 
 
 	// Use this for initialization
@@ -42,8 +43,13 @@ public class mouv : MonoBehaviour {
             roue2.transform.Rotate(vit*1f, 0f, 0f);
             roue3.transform.Rotate(vit * 1f, 0f, 0f);
             roue4.transform.Rotate(vit * 1f, 0f, 0f);
+            fin.SetActive(true);
             if (vit < vitesse)
                 vit = vit + 0.01f;
+            if(vit + 0.01f >= vitesse)
+            {
+                Application.Quit();
+            }
 
         }
 	
