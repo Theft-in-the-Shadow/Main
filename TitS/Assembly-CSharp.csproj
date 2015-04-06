@@ -90,6 +90,8 @@
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneAnimatorSetup.cs" />
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneTags.cs" />
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\DestroyEffect.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\csLightControl.cs" />
      <Compile Include="Assets\Laser\laserScript.cs" />
      <Compile Include="Assets\Laser\laserScriptAlarm.cs" />
      <Compile Include="Assets\Laser\laserScriptDesactivation.cs" />

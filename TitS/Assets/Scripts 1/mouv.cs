@@ -56,12 +56,15 @@ public class mouv : MonoBehaviour {
 	}
     void OnTriggerStay (Collider other)
     {
-        if(tableau)
+        if(other.gameObject == player)
         {
-            cam.enabled = true;
-            player.SetActive(false);
-            camera.GetComponent<AudioListener>().enabled = true;
-            inter = true;
+            if (tableau)
+            {
+                cam.enabled = true;
+                player.SetActive(false);
+                camera.GetComponent<AudioListener>().enabled = true;
+                inter = true;
+            }
         }
         
     }

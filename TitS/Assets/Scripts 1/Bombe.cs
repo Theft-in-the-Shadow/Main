@@ -15,7 +15,7 @@ public class Bombe : MonoBehaviour {
     public GameObject bomb2;
     public GameObject bomb3;
     public GameObject wall;
-    public GameObject bruit;
+    public GameObject wall2;
     public float time = 0f;
 
     void Awake()
@@ -56,7 +56,8 @@ public class Bombe : MonoBehaviour {
                         bomb2.SetActive(true);
                         if (time>7f)
                         {
-                            Destroy(wall, 1);
+                            Destroy(wall, 0.1f);
+                            wall2.SetActive(true);
                             bomb3.SetActive(true);
                         }
                     }
@@ -74,7 +75,8 @@ public class Bombe : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-        inside = true;
+        if(other.gameObject == player)
+            inside = true;
     }
     void OnTriggerExit (Collider other)
     {
