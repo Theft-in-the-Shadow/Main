@@ -22,13 +22,16 @@ public class mouvres : MonoBehaviour
     private GameObject player2;
     private int nb_joueur;
     private fine fine;
-    public int nb_entre = 0;
     public bool init = false;
+    public bool j1 = false;
+    public bool j2 = false;
+    private NetworkView nt;
 
 
     // Use this for initialization
     void Awake()
     {
+        nt = GetComponent<NetworkView>();
         fine = GameObject.FindGameObjectWithTag("can").GetComponent<fine>();
         Maincam = GameObject.FindGameObjectWithTag("MainCamera");
         col = GetComponent<SphereCollider>();
@@ -45,6 +48,19 @@ public class mouvres : MonoBehaviour
         {
             player2 = GameObject.FindGameObjectWithTag("player2");
             init = true;
+        }
+        if (Network.isServer)
+            nt.RPC("update1", RPCMode.Others, j1);
+        else
+            nt.RPC("update2", RPCMode.Others, j2);
+        if (tableau && j1 && j2)
+        {
+            cam.enabled = true;
+            Maincam.SetActive(false);
+            player.SetActive(false);
+            player2.SetActive(false);
+            camera.GetComponent<AudioListener>().enabled = true;
+            inter = true;            
         }
         if (inter)
         {
@@ -71,42 +87,31 @@ public class mouvres : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (nb_joueur == 1)
-        {
-            if (other.gameObject == player)
-            {
-                if (tableau)
-                {
-                    cam.enabled = true;
-                    Maincam.SetActive(false);
-                    player.SetActive(false);
-                    camera.GetComponent<AudioListener>().enabled = true;
-                    inter = true;
-                }
-            }
-        }
-        else
-        {
-            if (other.gameObject == player || other.gameObject == player2)
-            {
-                nb_entre++;
-                if (tableau && nb_entre == 2)
-                {
-                    cam.enabled = true;
-                    Maincam.SetActive(false);
-                    player.SetActive(false);
-                    player2.SetActive(false);
-                    camera.GetComponent<AudioListener>().enabled = true;
-                    inter = true;
-                }
-            }
-        }
+        if (Network.isServer && other.gameObject == player)
+            j1 = true;
+        if (Network.isClient && other.gameObject == player2)
+            j2 = true;
 
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == player || other.gameObject == player2)
-            nb_entre--;
+        if (Network.isServer && other.gameObject == player)
+            j1 = false;
+        if (Network.isClient && other.gameObject == player2)
+            j2 = false;
     }
+
+    [RPC]
+    public void update1(bool j)
+    {
+        j1 = j;
+    }
+    [RPC]
+    public void update2(bool j)
+    {
+        j2 = j;
+    }
+
+
 
 }

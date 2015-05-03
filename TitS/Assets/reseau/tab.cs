@@ -10,6 +10,7 @@ public class tab : MonoBehaviour {
 	void Update () {
         if(recu)
         {
+            
             table.SetActive(true);
         }
 	

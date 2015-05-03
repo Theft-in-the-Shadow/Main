@@ -1420,6 +1420,8 @@ GameObject:
   - 114: {fileID: 11410846}
   - 82: {fileID: 8210844}
   - 114: {fileID: 11410844}
+  - 114: {fileID: 11472616}
+  - 114: {fileID: 11475330}
   m_Layer: 0
   m_Name: joueur 2
   m_TagString: player2
@@ -3038,6 +3040,28 @@ MonoBehaviour:
   deathClip: {fileID: 0}
   spawnPoints: []
   ombre: 0
+--- !u!114 &11472616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 696509b1270b6d947921ee980bf16bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11475330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4528c4eccb20e4785798d3a9f0718a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &13610844
 CapsuleCollider:
   m_ObjectHideFlags: 1

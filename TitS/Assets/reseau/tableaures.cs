@@ -9,10 +9,11 @@ public class tableaures : MonoBehaviour
     private GameObject player;
     private mouvres mouve;
     private tab tab;
+    private NetworkView nt;
 
     void Awake()
     {
-
+        nt = GetComponent<NetworkView>();
         player = GameObject.FindGameObjectWithTag("Player");
         mouve = GameObject.Find("VEHICLE_SUV").GetComponent<mouvres>();
         tab = GameObject.FindGameObjectWithTag("main").GetComponent<tab>();
@@ -23,10 +24,16 @@ public class tableaures : MonoBehaviour
         {
             if (Input.GetButton("Bombe"))
             {
-                mouve.tableau = true;
-                tab.recu = true;
-                tableau1.SetActive(false);
+                nt.RPC("tau", RPCMode.All);
             }
         }
+    }
+
+    [RPC]
+    public void tau()
+    {
+        mouve.tableau = true;
+        tab.recu = true;
+        tableau1.SetActive(false);
     }
 }

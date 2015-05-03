@@ -18,7 +18,7 @@ public class playersightres : MonoBehaviour {
     private GameObject[] map;
     private LevelManager level;      
     public int nb_joueur = 0;
-    private playerhealthres player2Health;
+    public playerhealthres player2Health;
     private Animator playerAnim;						// Reference to the player's animator component.
 	private playerhealthres playerHealth;				// Reference to the player's health script.
 	private DoneHashIDs hash;							// Reference to the HashIDs.

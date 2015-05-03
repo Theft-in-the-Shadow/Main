@@ -7,7 +7,5 @@ public class SpawnPoint : MonoBehaviour
 	
 	void OnDrawGizmos()
 	{
-		Gizmos.color = color;
-		Gizmos.DrawCube(transform.position, transform.localScale);
 	}
 }

@@ -4,12 +4,18 @@ using UnityEngine.UI;
 
 public class ombreres : MonoBehaviour
 {
-
+    private NetworkView NetworkView;
     private GameObject player;
     private GameObject player2;
     private int nb_joueur;
     private bool init = false;
     private bool init2 = false;
+    public bool ent = false;
+
+    void Awake()
+    {
+        NetworkView = new NetworkView();
+    }
 
 
     void Update()
@@ -30,15 +36,15 @@ public class ombreres : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == player)
-            player.GetComponent<playerhealthres>().ombre = true;
+            player.GetComponent<playerhealthres>().ombre = true; 
         else if (init && other.gameObject == player2)
-            player2.GetComponent<playerhealthres>().ombre = true;
+            player2.GetComponent<playerhealthres>().ombre = true; 
     }
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject == player)
-            player.GetComponent<playerhealthres>().ombre = false;
+            player.GetComponent<playerhealthres>().ombre = false; 
         else if (init && other.gameObject == player2)
-            player2.GetComponent<playerhealthres>().ombre = false;        
+            player2.GetComponent<playerhealthres>().ombre = false;      
     }
 }
