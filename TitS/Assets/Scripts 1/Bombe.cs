@@ -8,10 +8,9 @@ public class Bombe : MonoBehaviour {
     public bool bombePose = false;
     public bool inside = false;
     private Animator anim;                              // Reference to the animator component.
-    private PlayerMovements playerMovement;            // Reference to the player movement script.
+    private playermouvres playerMovement;            // Reference to the player movement script.
     private HashIDs hash;
     private GameObject player;
-    public GameObject bomb;
     public GameObject bomb2;
     public GameObject bomb3;
     public GameObject wall;
@@ -22,7 +21,7 @@ public class Bombe : MonoBehaviour {
     {
         player = GameObject.FindGameObjectWithTag("Player");
         anim = player.GetComponent<Animator>();
-        playerMovement = player.GetComponent<PlayerMovements>();
+        playerMovement = player.GetComponent<playermouvres>();
         hash = GameObject.Find("gameController").GetComponent<HashIDs>();
     }
 
@@ -33,7 +32,6 @@ public class Bombe : MonoBehaviour {
             if (Input.GetButton("Bombe"))
             {
                 anim.SetBool(hash.bombeBool, true);
-                bomb.SetActive(true);
                 time = 0;
 
                 
@@ -52,7 +50,6 @@ public class Bombe : MonoBehaviour {
                     playerMovement.enabled = true;
                     if(time>5f)
                     {
-                        bomb.SetActive(false);
                         bomb2.SetActive(true);
                         if (time>7f)
                         {

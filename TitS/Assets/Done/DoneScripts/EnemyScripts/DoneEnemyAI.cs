@@ -34,18 +34,18 @@ public class DoneEnemyAI : MonoBehaviour
 	void Update ()
 	{
 		// If the player is in sight and is alive...
-		if(enemySight.playerInSight && playerHealth.health > 0f)
-			// ... shoot.
-			Shooting();
-		
-		// If the player has been sighted and isn't dead...
-		else if(enemySight.personalLastSighting != lastPlayerSighting.resetPosition && playerHealth.health > 0f)
-			// ... chase.
-			Chasing();
-		
-		// Otherwise...
-		else
-			// ... patrol.
+        if (enemySight.playerInSight && playerHealth.health > 0f)
+            // ... shoot.
+            Shooting();
+
+        // If the player has been sighted and isn't dead...
+        else if (enemySight.personalLastSighting != lastPlayerSighting.resetPosition && playerHealth.health > 0f)
+            // ... chase.
+            Chasing();
+
+        // Otherwise...
+        else
+            // ... patrol.
 			Patrolling();
 	}
 	

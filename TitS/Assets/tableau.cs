@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class tableau : MonoBehaviour {
+public class tableau : MonoBehaviour
+{
 
-	// Use this for initialization
+    // Use this for initialization
     public GameObject tableau1;
     public GameObject tableau2;
     private GameObject player;

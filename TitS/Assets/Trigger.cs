@@ -30,7 +30,7 @@ public class Trigger : MonoBehaviour
     }
     void OnTriggerEnter(Collider obj)
     {
-        if (obj.transform.name == "DefaultAvatar")
+        if (obj.gameObject == GameObject.FindGameObjectWithTag(DoneTags.player) || obj.gameObject == GameObject.FindGameObjectWithTag("player2"))
         {
             opening = true;
             closing = false;
@@ -39,7 +39,7 @@ public class Trigger : MonoBehaviour
 
     void OnTriggerExit(Collider obj)
     {
-        if (obj.transform.name == "DefaultAvatar")
+        if (obj.gameObject == GameObject.FindGameObjectWithTag(DoneTags.player) || obj.gameObject == GameObject.FindGameObjectWithTag("player2"))
         {
             opening = false;
             closing = true;

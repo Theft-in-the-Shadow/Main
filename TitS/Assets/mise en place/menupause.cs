@@ -5,11 +5,10 @@ public class menupause : MonoBehaviour {
 
 
 
-    public AudioSource audios;
-
+	public AudioSource audios;
+	public float turnsmo = 2.5f;
 	private Rect windowRect;
 	private bool paused = false , waited = true,option=false;
-    float izi;
 	
 	private void Start()
 	{
@@ -38,10 +37,12 @@ public class menupause : MonoBehaviour {
 	
 	private void OnGUI()
 	{
+
 		if (paused) {
-			windowRect = GUI.Window (0, windowRect, windowFunc, "Menu Pause");
-			Time.timeScale = 0;
-		}
+						windowRect = GUI.Window (0, windowRect, windowFunc, "Pause");
+						Time.timeScale = 0;
+				}
+				
 		if (option)
 		{windowRect = GUI.Window (0, windowRect, windowFunc1, "Options");
 		//audio = GUI.HorizontalSlider(new Rect(300, 250, 100, 100), audio, 0.0F, 10.0F);
@@ -50,8 +51,10 @@ public class menupause : MonoBehaviour {
 	
 	private void windowFunc(int id)
 	{
+
 		if (GUILayout.Button("Reprendre"))
 		{
+			//turnsmo = 0f;
 			paused = false;
 			Time.timeScale = 1;
 		}
@@ -66,10 +69,14 @@ public class menupause : MonoBehaviour {
 			Application.Quit();
 		}
 	}
+
 	private void windowFunc1(int id)
 	{
-		audios.volume = GUI.HorizontalSlider (new Rect (50, 75, 100, 30), audios.volume, 0.0F, 1.0F);
-		GUI.Box(new Rect(85,50,31,20), "Son");
+		turnsmo = GUI.HorizontalSlider (new Rect (50, 75, 100, 30), turnsmo, 1.0F, 5.0F);
+		GUI.Box(new Rect(55,50,130,20), "Rotation: Sensibilté");
+		audios.volume = GUI.HorizontalSlider (new Rect (50, 125, 100, 30), audios.volume, 0.0F, 1.0F);
+		GUI.Box(new Rect(85,100,31,20), "Son");
+
 		if (GUILayout.Button("Retour"))
 		{
 			option = false;

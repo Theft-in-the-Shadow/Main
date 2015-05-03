@@ -70,17 +70,17 @@ public class DoneEnemySight : MonoBehaviour
 			float angle = Vector3.Angle(direction, transform.forward);
 			
 			// If the angle between forward and where the player is, is less than half the angle of view...
-			if(angle < fieldOfViewAngle * 0.5f)
-			{
-				RaycastHit hit;
-				
-				// ... and if a raycast towards the player hits something...
-				if(Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius))
-				{
-					// ... and if the raycast hits the player...
-					if(hit.collider.gameObject == player)
-					{
-                        if(!playerHealth.ombre || lastPlayerSighting.position != lastPlayerSighting.resetPosition)
+            if (angle < fieldOfViewAngle * 0.5f)
+            {
+                RaycastHit hit;
+
+                // ... and if a raycast towards the player hits something...
+                if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius))
+                {
+                    // ... and if the raycast hits the player...
+                    if (hit.collider.gameObject == player)
+                    {
+                        if (!playerHealth.ombre || lastPlayerSighting.position != lastPlayerSighting.resetPosition)
                         {
                             // ... the player is in sight.
                             playerInSight = true;
@@ -88,10 +88,10 @@ public class DoneEnemySight : MonoBehaviour
                             // Set the last global sighting is the players current position.
                             lastPlayerSighting.position = player.transform.position;
                         }
-						
-					}
-				}
-			}
+
+                    }
+                }
+            }
 			
 			// Store the name hashes of the current states.
 			int playerLayerZeroStateHash = playerAnim.GetCurrentAnimatorStateInfo(0).nameHash;

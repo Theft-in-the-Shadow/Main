@@ -3,22 +3,25 @@ using System.Collections;
 
 public class SmoothCameraWithBumper : MonoBehaviour 
 {
-	[SerializeField] private Transform target = null;
-	[SerializeField] private float distance = 3.0f;
-	[SerializeField] private float height = 1.0f;
-	[SerializeField] private float damping = 5.0f;
-	[SerializeField] private bool smoothRotation = true;
-	[SerializeField] private float rotationDamping = 10.0f;
+	public Transform target = null;
+	public float distance = 1.40f;
+	public float height = 1.78f;
+	private float damping = 5.0f;
+	private bool smoothRotation = true;
+	private float rotationDamping = 10.0f;
+	private bool touche = false;
 	
-	[SerializeField] private Vector3 targetLookAtOffset; // allows offsetting of camera lookAt, very useful for low bumper heights
+	private Vector3 targetLookAtOffset = new Vector3(0f,1.5f,0f); // allows offsetting of camera lookAt, very useful for low bumper heights
 	
-	[SerializeField] private float bumperDistanceCheck = 2.5f; // length of bumper ray
-	[SerializeField] private float bumperCameraHeight = 1.0f; // adjust camera height while bumping
-	[SerializeField] private Vector3 bumperRayOffset; // allows offset of the bumper ray from target origin
-	
+	private float bumperDistanceCheck = 2.5f; // length of bumper ray
+	private float bumperCameraHeight = 1.0f; // adjust camera height while bumping
+	private Vector3 bumperRayOffset; // allows offset of the bumper ray from target origin
+	SphereCollider camcollider = new SphereCollider();
 	/// <Summary>
 	/// If the target moves, the camera should child the target to allow for smoother movement. DR
 	/// </Summary>
+	///
+
 	private void Awake()
 	{
 		camera.transform.parent = target;
@@ -26,6 +29,13 @@ public class SmoothCameraWithBumper : MonoBehaviour
 	
 	private void FixedUpdate() 
 	{
+		if (distance != 1.40f && !touche) {
+			distance += 0.02f*(1.40f-distance);
+				}
+		if (height != 1.78f&&!touche)
+			height -= 0.08f*(height-1.78f);
+
+
 		Vector3 wantedPosition = target.TransformPoint(0, height, -distance);
 		
 		// check to see if there is anything behind the target
@@ -54,4 +64,15 @@ public class SmoothCameraWithBumper : MonoBehaviour
 		else 
 			transform.rotation = Quaternion.LookRotation(lookPosition - transform.position, target.up);
 	}
+	void OnTriggerEnter()  {
+		touche = true;
+		if (distance > 0.5f)
+				if (height < 2.19f)
+						height += 0.4f;
+		distance -= 0.4f*(distance-0.5f);
+	}
+	void OnTriggerExit() {
+		touche = false;
+	}
+
 }

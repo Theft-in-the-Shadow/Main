@@ -15,6 +15,14 @@ TagManager:
   - 
   - 
   - cercle
+  - player2
+  - Map
+  - album
+  - bombe
+  - fin
+  - light
+  - main
+  - can
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

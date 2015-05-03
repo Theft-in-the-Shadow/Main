@@ -3,9 +3,9 @@ using System.Collections;
 
 public class DoneSceneFadeInOut : MonoBehaviour
 {
-	public float fadeSpeed = 1.5f;			// Speed that the screen fades to and from black.
-	
-	
+	public float fadeSpeed = 5f;			// Speed that the screen fades to and from black.
+
+    public bool morte = false;
 	private bool sceneStarting = true;		// Whether or not the scene is still fading in.
 	
 	
@@ -37,6 +37,11 @@ public class DoneSceneFadeInOut : MonoBehaviour
 		// Lerp the colour of the texture between itself and black.
 		guiTexture.color = Color.Lerp(guiTexture.color, Color.black, fadeSpeed * Time.deltaTime);
 	}
+    void FadeToBlack2()
+    {
+        // Lerp the colour of the texture between itself and black.
+        guiTexture.color = Color.Lerp(guiTexture.color, Color.black, fadeSpeed * Time.deltaTime);
+    }
 	
 	
 	void StartScene ()
@@ -63,11 +68,32 @@ public class DoneSceneFadeInOut : MonoBehaviour
 		guiTexture.enabled = true;
 		
 		// Start fading towards black.
-		FadeToBlack();
+		FadeToBlack2();
 		
 		// If the screen is almost black...
 		if(guiTexture.color.a >= 0.95f)
 			// ... reload the level.
 			Application.LoadLevel(0);
 	}
+
+    public void reStartScene ()
+    { 
+        // ... set the colour to clear and disable the GUITexture.
+        guiTexture.color = Color.clear;
+        guiTexture.enabled = false;
+               
+    }
+
+    public void mort()
+    {
+        guiTexture.enabled = true;
+        // Start fading towards black.
+        FadeToBlack();
+
+        // If the screen is almost black...
+        if (guiTexture.color.a >= 0.95f)
+            // ... reload the level.
+            morte = true;      
+        
+    }
 }
