@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Camera\Camera_mouv.cs" />
      <Compile Include="Assets\Camera\cameraDesactivationScript.cs" />
+     <Compile Include="Assets\CameraAvertissementPrint.cs" />
+     <Compile Include="Assets\CameraDesactivationPrint.cs" />
      <Compile Include="Assets\Detonator Explosion Framework\Sample Supporting Emitters\DetonatorSprayHelper.cs" />
      <Compile Include="Assets\Detonator Explosion Framework\System\Detonator.cs" />
      <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorBurstEmitter.cs" />
@@ -92,10 +94,20 @@
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
      <Compile Include="Assets\Fx Explosion Pack\Script\DestroyEffect.cs" />
      <Compile Include="Assets\Fx Explosion Pack\Script\csLightControl.cs" />
+     <Compile Include="Assets\Laser\CameraDesactivationAnimationScript.cs" />
      <Compile Include="Assets\Laser\laserScript.cs" />
      <Compile Include="Assets\Laser\laserScriptAlarm.cs" />
      <Compile Include="Assets\Laser\laserScriptDesactivation.cs" />
+     <Compile Include="Assets\Laser\laserScriptGUI.cs" />
      <Compile Include="Assets\OpenDoor.cs" />
+     <Compile Include="Assets\PrintMiniMap.cs" />
+     <Compile Include="Assets\Quêtes+Interface\AvertissementGardeScript.cs" />
+     <Compile Include="Assets\Quêtes+Interface\KeyPick.cs" />
+     <Compile Include="Assets\Quêtes+Interface\MiniMapFollow.cs" />
+     <Compile Include="Assets\Quêtes+Interface\Overlay.cs" />
+     <Compile Include="Assets\Quêtes+Interface\PointDuPersonnage.cs" />
+     <Compile Include="Assets\Quêtes+Interface\PorteCoulissanteKeyScript.cs" />
+     <Compile Include="Assets\Quêtes+Interface\PorteTEST.cs" />
      <Compile Include="Assets\Scripts 1\Bombe.cs" />
      <Compile Include="Assets\Scripts 1\HashIDs.cs" />
      <Compile Include="Assets\Scripts 1\PlayerHealth.cs" />

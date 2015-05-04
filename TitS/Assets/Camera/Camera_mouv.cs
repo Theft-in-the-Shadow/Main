@@ -5,13 +5,14 @@ public class Camera_mouv : MonoBehaviour {
 
 	public float angle = 90f;
 	public float fieldOfViewAngle = 20f;
+    public float Speed = 1f;
     public bool playerInSight = false;
     public Vector3 direction;
+    public GameObject light;
+    public GameObject rotat;
 
     private bool IsActivated;
-	private GameObject light ;
-	private GameObject rotat;
-    private int i;
+    private float i;
     private bool alle;
     private SphereCollider col;
     private GameObject player;
@@ -21,18 +22,16 @@ public class Camera_mouv : MonoBehaviour {
     private bool was_found = false;
 
 
-	void Awake () 
+	void Start () 
 	{
         i = 0;
         alle = true;
-		light = GameObject.Find ("Directional light");
-		rotat = GameObject.Find ("CamArmature");
-        camera_initiale = rotat.transform.position;
         col = GetComponent<SphereCollider>();
         player = GameObject.FindGameObjectWithTag(DoneTags.player);
         lastPlayerSighting = GameObject.FindGameObjectWithTag(DoneTags.gameController).GetComponent<DoneLastPlayerSighting>();
-        light.SetActive(true);
-	
+
+       // rotat.transform.rotation = ....
+
 	}
 	void Update ()
     {
@@ -50,14 +49,14 @@ public class Camera_mouv : MonoBehaviour {
                 {
                     if (i <= angle & alle)
                     {
-                        rotat.transform.Rotate(0, 0, -1);
-                        i++;
+                        rotat.transform.Rotate(0, 0, -Speed);
+                        i=i+Speed;
                     }
                     else
                     {
                         alle = false;
-                        rotat.transform.Rotate(0, 0, 1);
-                        i--;
+                        rotat.transform.Rotate(0, 0, Speed);
+                        i = i - Speed;
                         if (i <= 0)
                         {
                             alle = true;
@@ -70,7 +69,7 @@ public class Camera_mouv : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject == player & IsActivated)
         {
             direction = other.transform.position - light.transform.position;
             float angle_f = Vector3.Angle(direction, light.transform.forward);

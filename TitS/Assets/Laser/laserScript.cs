@@ -4,12 +4,14 @@ using System.Collections;
 public class laserScript : MonoBehaviour {
 	public float On;
 	public float Off;
+    public Light Laser;
 
     private float timer;
-	// Use this for initialization
+
     void Start ()
     {
         timer = Time.time;
+        Laser.enabled = true;
     }
     void Update()
     {
@@ -29,7 +31,7 @@ public class laserScript : MonoBehaviour {
 	void Switch()
     {
         timer = 0f;
-        renderer.enabled = !renderer.enabled;
-        light.enabled = !light.enabled;
+        renderer.enabled = !renderer.enabled;;
+       //light.enabled = !light.enabled;
 	}
 }

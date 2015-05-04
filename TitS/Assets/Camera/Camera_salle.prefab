@@ -411,6 +411,7 @@ GameObject:
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400002}
   - 135: {fileID: 13500000}
+  - 114: {fileID: 11438312}
   m_Layer: 0
   m_Name: Camera_salle
   m_TagString: Untagged
@@ -3068,6 +3069,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angle: 180
+  fieldOfViewAngle: 20
+  playerInSight: 0
+  direction: {x: 0, y: 0, z: 0}
+--- !u!114 &11438312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5b72c3caf21ed4787c459e4de7c033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angle: 90
   fieldOfViewAngle: 20
   playerInSight: 0
   direction: {x: 0, y: 0, z: 0}
