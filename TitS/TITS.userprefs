@@ -1,15 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\TitS\Assets\Scripts 1\Bombe.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\TitS\Assets\reseau 1\Scripts\LevelManager.cs">
     <Files>
-      <File FileName="..\TitS\Assets\Scripts 1\Bombe.cs" Line="23" Column="61" />
       <File FileName="..\TitS\TitS.sln" Line="1" Column="1" />
+      <File FileName="..\TitS\Assets\reseau\depj2.cs" Line="1" Column="1" />
+      <File FileName="..\TitS\Assets\Scripts 1\Bombe.cs" Line="33" Column="14" />
       <File FileName="..\TitS\Assets\Done\DoneScripts\EnemyScripts\DoneEnemyAI.cs" Line="1" Column="1" />
       <File FileName="..\TitS\Assets\Scripts 1\HashIDs.cs" Line="1" Column="1" />
       <File FileName="Assets\Done\DoneScripts\EnemyScripts\DoneEnemySight.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts 1\PlayerMovements.cs" Line="1" Column="1" />
       <File FileName="Assets\Done\DoneScripts\GameControllerScripts\DoneLastPlayerSighting.cs" Line="1" Column="1" />
       <File FileName="Assets\TEMPS.cs" Line="1" Column="1" />
+      <File FileName="..\TitS\Assets\reseau 1\Scripts\LevelManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

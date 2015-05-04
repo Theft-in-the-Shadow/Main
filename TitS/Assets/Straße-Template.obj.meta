@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 9f4e6bae7a79ae34e9289bee80762675
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Street_by_fireflash99_Baum-Aspen leaves
+    100004: Street_by_fireflash99_Baum-Aspen leaves21
+    100006: Street_by_fireflash99_Baum-Aspen stems_1
+    100008: Street_by_fireflash99_Baum-Aspen stems_2
+    100010: Street_by_fireflash99_Baum-Aspen trunk
+    100012: Street_by_fireflash99_Baum-Safras leaves1
+    100014: Street_by_fireflash99_Baum-Safras leaves1_MeshPart0
+    100016: Street_by_fireflash99_Baum-Safras leaves1_MeshPart1
+    100018: Street_by_fireflash99_Baum-Safras leaves2
+    100020: Street_by_fireflash99_Baum-Safras leaves2_MeshPart0
+    100022: Street_by_fireflash99_Baum-Safras leaves2_MeshPart1
+    100024: Street_by_fireflash99_Baum-Safras stems_11
+    100026: Street_by_fireflash99_Baum-Safras stems_21
+    100028: Street_by_fireflash99_Baum-Safras stems_3
+    100030: Street_by_fireflash99_Baum-Safras stems_3_MeshPart0
+    100032: Street_by_fireflash99_Baum-Safras stems_3_MeshPart1
+    100034: Street_by_fireflash99_Baum-Safras trunk1
+    100036: Street_by_fireflash99_Stra_e Leitplanke Leitplanke2
+    100038: Street_by_fireflash99_Stra_e Leitplanke St_tze
+    100040: Street_by_fireflash99_Stra_e Leitplanke St_tze_11
+    100042: Street_by_fireflash99_Stra_e Leitplanke St_tze_21
+    100044: Street_by_fireflash99_Stra_e Leitplanke_1 Leitplanke1
+    100046: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze1
+    100048: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_1
+    100050: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_2
+    100052: Street_by_fireflash99_Stra_e Stra_e1
+    400000: //RootNode
+    400002: Street_by_fireflash99_Baum-Aspen leaves
+    400004: Street_by_fireflash99_Baum-Aspen leaves21
+    400006: Street_by_fireflash99_Baum-Aspen stems_1
+    400008: Street_by_fireflash99_Baum-Aspen stems_2
+    400010: Street_by_fireflash99_Baum-Aspen trunk
+    400012: Street_by_fireflash99_Baum-Safras leaves1
+    400014: Street_by_fireflash99_Baum-Safras leaves1_MeshPart0
+    400016: Street_by_fireflash99_Baum-Safras leaves1_MeshPart1
+    400018: Street_by_fireflash99_Baum-Safras leaves2
+    400020: Street_by_fireflash99_Baum-Safras leaves2_MeshPart0
+    400022: Street_by_fireflash99_Baum-Safras leaves2_MeshPart1
+    400024: Street_by_fireflash99_Baum-Safras stems_11
+    400026: Street_by_fireflash99_Baum-Safras stems_21
+    400028: Street_by_fireflash99_Baum-Safras stems_3
+    400030: Street_by_fireflash99_Baum-Safras stems_3_MeshPart0
+    400032: Street_by_fireflash99_Baum-Safras stems_3_MeshPart1
+    400034: Street_by_fireflash99_Baum-Safras trunk1
+    400036: Street_by_fireflash99_Stra_e Leitplanke Leitplanke2
+    400038: Street_by_fireflash99_Stra_e Leitplanke St_tze
+    400040: Street_by_fireflash99_Stra_e Leitplanke St_tze_11
+    400042: Street_by_fireflash99_Stra_e Leitplanke St_tze_21
+    400044: Street_by_fireflash99_Stra_e Leitplanke_1 Leitplanke1
+    400046: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze1
+    400048: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_1
+    400050: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_2
+    400052: Street_by_fireflash99_Stra_e Stra_e1
+    2300000: Street_by_fireflash99_Baum-Aspen leaves
+    2300002: Street_by_fireflash99_Baum-Aspen leaves21
+    2300004: Street_by_fireflash99_Baum-Aspen stems_1
+    2300006: Street_by_fireflash99_Baum-Aspen stems_2
+    2300008: Street_by_fireflash99_Baum-Aspen trunk
+    2300010: Street_by_fireflash99_Baum-Safras leaves1_MeshPart0
+    2300012: Street_by_fireflash99_Baum-Safras leaves1_MeshPart1
+    2300014: Street_by_fireflash99_Baum-Safras leaves2_MeshPart0
+    2300016: Street_by_fireflash99_Baum-Safras leaves2_MeshPart1
+    2300018: Street_by_fireflash99_Baum-Safras stems_11
+    2300020: Street_by_fireflash99_Baum-Safras stems_21
+    2300022: Street_by_fireflash99_Baum-Safras stems_3_MeshPart0
+    2300024: Street_by_fireflash99_Baum-Safras stems_3_MeshPart1
+    2300026: Street_by_fireflash99_Baum-Safras trunk1
+    2300028: Street_by_fireflash99_Stra_e Leitplanke Leitplanke2
+    2300030: Street_by_fireflash99_Stra_e Leitplanke St_tze
+    2300032: Street_by_fireflash99_Stra_e Leitplanke St_tze_11
+    2300034: Street_by_fireflash99_Stra_e Leitplanke St_tze_21
+    2300036: Street_by_fireflash99_Stra_e Leitplanke_1 Leitplanke1
+    2300038: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze1
+    2300040: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_1
+    2300042: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_2
+    2300044: Street_by_fireflash99_Stra_e Stra_e1
+    3300000: Street_by_fireflash99_Baum-Aspen leaves
+    3300002: Street_by_fireflash99_Baum-Aspen leaves21
+    3300004: Street_by_fireflash99_Baum-Aspen stems_1
+    3300006: Street_by_fireflash99_Baum-Aspen stems_2
+    3300008: Street_by_fireflash99_Baum-Aspen trunk
+    3300010: Street_by_fireflash99_Baum-Safras leaves1_MeshPart0
+    3300012: Street_by_fireflash99_Baum-Safras leaves1_MeshPart1
+    3300014: Street_by_fireflash99_Baum-Safras leaves2_MeshPart0
+    3300016: Street_by_fireflash99_Baum-Safras leaves2_MeshPart1
+    3300018: Street_by_fireflash99_Baum-Safras stems_11
+    3300020: Street_by_fireflash99_Baum-Safras stems_21
+    3300022: Street_by_fireflash99_Baum-Safras stems_3_MeshPart0
+    3300024: Street_by_fireflash99_Baum-Safras stems_3_MeshPart1
+    3300026: Street_by_fireflash99_Baum-Safras trunk1
+    3300028: Street_by_fireflash99_Stra_e Leitplanke Leitplanke2
+    3300030: Street_by_fireflash99_Stra_e Leitplanke St_tze
+    3300032: Street_by_fireflash99_Stra_e Leitplanke St_tze_11
+    3300034: Street_by_fireflash99_Stra_e Leitplanke St_tze_21
+    3300036: Street_by_fireflash99_Stra_e Leitplanke_1 Leitplanke1
+    3300038: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze1
+    3300040: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_1
+    3300042: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_2
+    3300044: Street_by_fireflash99_Stra_e Stra_e1
+    4300000: Street_by_fireflash99_Baum-Aspen leaves
+    4300002: Street_by_fireflash99_Baum-Aspen leaves21
+    4300004: Street_by_fireflash99_Baum-Aspen stems_1
+    4300006: Street_by_fireflash99_Baum-Aspen stems_2
+    4300008: Street_by_fireflash99_Baum-Aspen trunk
+    4300010: Street_by_fireflash99_Baum-Safras leaves1_MeshPart0
+    4300012: Street_by_fireflash99_Baum-Safras leaves1_MeshPart1
+    4300014: Street_by_fireflash99_Baum-Safras leaves2_MeshPart0
+    4300016: Street_by_fireflash99_Baum-Safras leaves2_MeshPart1
+    4300018: Street_by_fireflash99_Baum-Safras stems_11
+    4300020: Street_by_fireflash99_Baum-Safras stems_21
+    4300022: Street_by_fireflash99_Baum-Safras stems_3_MeshPart0
+    4300024: Street_by_fireflash99_Baum-Safras stems_3_MeshPart1
+    4300026: Street_by_fireflash99_Baum-Safras trunk1
+    4300028: Street_by_fireflash99_Stra_e Leitplanke Leitplanke2
+    4300030: Street_by_fireflash99_Stra_e Leitplanke St_tze
+    4300032: Street_by_fireflash99_Stra_e Leitplanke St_tze_11
+    4300034: Street_by_fireflash99_Stra_e Leitplanke St_tze_21
+    4300036: Street_by_fireflash99_Stra_e Leitplanke_1 Leitplanke1
+    4300038: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze1
+    4300040: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_1
+    4300042: Street_by_fireflash99_Stra_e Leitplanke_1 St_tze_2
+    4300044: Street_by_fireflash99_Stra_e Stra_e1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
