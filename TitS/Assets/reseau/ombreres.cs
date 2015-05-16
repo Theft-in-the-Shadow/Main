@@ -36,15 +36,15 @@ public class ombreres : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == player)
-            player.GetComponent<playerhealthres>().ombre = true; 
+            player.GetComponent<playerhealthres>().ombre = false; 
         else if (init && other.gameObject == player2)
-            player2.GetComponent<playerhealthres>().ombre = true; 
+            player2.GetComponent<playerhealthres>().ombre = false; 
     }
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject == player)
-            player.GetComponent<playerhealthres>().ombre = false; 
+            player.GetComponent<playerhealthres>().ombre = true; 
         else if (init && other.gameObject == player2)
-            player2.GetComponent<playerhealthres>().ombre = false;      
+            player2.GetComponent<playerhealthres>().ombre = true;      
     }
 }

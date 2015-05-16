@@ -5,6 +5,7 @@ public class anim1 : MonoBehaviour {
 
     private Animator anim;
     private NetworkView nt;
+    private bool mort;
     private float vitesse;
 	// Use this for initialization
 	void Awake () 
@@ -19,15 +20,21 @@ public class anim1 : MonoBehaviour {
         if (Network.isServer)
         {
             vitesse = anim.GetFloat("Speed");
-            nt.RPC("maj", RPCMode.Others, vitesse);
+            mort = anim.GetBool("Dead");
+            nt.RPC("maj", RPCMode.Others, vitesse, mort);
         }
 
 	
 	}
 
     [RPC]
-    public void maj(float speed)
+    public void maj(float speed, bool dd)
     {
-        anim.SetFloat(Animator.StringToHash("Speed"), speed, 0.1f,Time.deltaTime);
+        if (dd)
+            anim.SetFloat(Animator.StringToHash("Speed"), 0, 0.1f, Time.deltaTime);
+        else
+            anim.SetFloat(Animator.StringToHash("Speed"), speed, 0.1f,Time.deltaTime);
+        anim.SetBool(Animator.StringToHash("Dead"), dd);
+
     }
 }

@@ -10,8 +10,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/menu.unity
   - enabled: 1
-    path: Assets/reseau 1/Scenes/Menu2.unity
-  - enabled: 1
     path: Assets/solo.unity
+  - enabled: 1
+    path: Assets/menu 3.unity
   - enabled: 1
     path: Assets/TEST.unity

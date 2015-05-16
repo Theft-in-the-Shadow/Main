@@ -40,7 +40,6 @@ public class menupause : MonoBehaviour {
 
 		if (paused) {
 						windowRect = GUI.Window (0, windowRect, windowFunc, "Pause");
-						Time.timeScale = 0;
 				}
 				
 		if (option)

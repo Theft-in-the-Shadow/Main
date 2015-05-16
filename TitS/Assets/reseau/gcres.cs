@@ -16,7 +16,9 @@ public class gcres : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
+
         position = lastsighting.position;
+        if(Network.isClient)
         nt.RPC("update", RPCMode.Others, position);
 
 	}

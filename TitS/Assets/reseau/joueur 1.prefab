@@ -3079,7 +3079,7 @@ MonoBehaviour:
   resetAfterDeathTime: 5
   deathClip: {fileID: 0}
   spawnPoints: []
-  ombre: 0
+  ombre: 1
 --- !u!136 &13696174
 CapsuleCollider:
   m_ObjectHideFlags: 1

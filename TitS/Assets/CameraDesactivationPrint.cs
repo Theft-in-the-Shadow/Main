@@ -1,45 +1,66 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraDesactivationPrint : MonoBehaviour {
+public class CameraDesactivationPrint : MonoBehaviour
+{
     public GameObject Camera;
+    public Camera AnimationCamera;
+    public Camera MainCamera;
 
     private GameObject player;
     private bool triggered;
     private bool CameraIsActivated;
     private float timer;
-    
-	void Start ()
+    private float timerDesactivation;
+
+    void Start()
     {
         player = GameObject.FindGameObjectWithTag(DoneTags.player);
+
         triggered = false;
         CameraIsActivated = true;
         timer = 0f;
-	}
-	
+        timerDesactivation = -1f;
+    }
 
-	void Update ()
+
+    void Update()
     {
-        if (!CameraIsActivated || timer>5)
+        if (!CameraIsActivated || timer > 5)
         {
             timer = timer + Time.deltaTime;
-            if (timer>5)
+            if (timer > 5)
             {
                 timer = 4.5f;
                 //Pour arrêter de compter + empêcher le GUI.
             }
         }
-	}
+        if (timerDesactivation >= 0)
+        {
+            timerDesactivation = timerDesactivation + Time.deltaTime;
+            AnimationCamera.depth = MainCamera.depth + 1;
+            AnimationCamera.animation.Play();
+
+            if (timerDesactivation > 1)
+            {
+                CameraIsActivated = false;
+                Camera.SetActive(false);
+                Camera.renderer.enabled = false;                
+            }
+        }
+    }
 
     void OnGUI()
     {
-        if (CameraIsActivated & triggered)
+        if (CameraIsActivated & triggered & timerDesactivation == -1f)
         {
-            GUI.Box(new Rect(Screen.width / 2 - 125, Screen.height - 75, 250, 25), "Appuyer sur 'A' pour désactiver la caméra.");
+            GUI.Box(new Rect(Screen.width / 2 - 25, Screen.height - 75, 250, 25), "Appuyer sur 'A' pour désactiver la caméra.");
         }
-        if (!CameraIsActivated & timer < 4f)
+        if (!CameraIsActivated & timerDesactivation > 1.5)
         {
-            GUI.Box(new Rect(Screen.width / 2 - 125, Screen.height - 75, 250, 50), "Caméra hors service, le champ est libre!");
+            GUI.Box(new Rect(Screen.width / 2 - 25, Screen.height - 75, 250, 50), "Caméra hors service, le champ est libre!");
+            AnimationCamera.depth = MainCamera.depth - 1;
+            timerDesactivation = -1f;
         }
     }
 
@@ -57,11 +78,9 @@ public class CameraDesactivationPrint : MonoBehaviour {
     {
         if (other.gameObject == player)
         {
-            if (Input.GetButton("Fire2"))
+            if (Input.GetButton("Fire2") & CameraIsActivated)
             {
-                CameraIsActivated = false;
-                Camera.SetActive(false);
-                Camera.renderer.enabled = false;
+                timerDesactivation = 0f;
             }
         }
     }

@@ -38,7 +38,7 @@ public class CameraAvertissementPrint : MonoBehaviour
     {
         if (triggered & IsActivated)
         {
-            GUI.Box(new Rect(Screen.width-250, 110, 250, 100), "ATTENTION: \n Une caméra balaie cette zone, \n il faut trouver un moyen de \n couper l'alimentation de cette caméra.");
+            GUI.Box(new Rect(Screen.width-250, 110 , 250, 100), "ATTENTION: \n Une caméra balaie cette zone, \n il faut trouver un moyen de \n couper l'alimentation de cette caméra.");
         }
     }
 
